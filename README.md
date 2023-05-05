@@ -1,5 +1,16 @@
 # Website
 
+- where to adjust headers?
+- how to insert pages?
+- how to style?
+- how to customize footer?
+- how to customize fonts?
+- how to customize 
+- don't forget to add font to typography scss
+
+Note: `docusaurus/types` devDependency is explicit for this reason: https://github.com/facebook/docusaurus/issues/7880#issuecomment-1368025143
+
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
