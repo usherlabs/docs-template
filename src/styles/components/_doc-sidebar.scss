@@ -81,10 +81,6 @@ html[data-theme="dark"] {
 
 		.menu__list-item-collapsible,
 		.menu__link-item {
-			.menu__link--active,
-			.menu__link--active:hover {
-				color: unset;
-			}
 
 			&:hover,
 			&:active,

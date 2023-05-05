@@ -42,13 +42,7 @@ const colors = {
 	"white-7": withOpacity(whiteRGB, 0.1),
 
 	// when opacity is not desirable
-	"grey-darkest": "#3d4852",
-	"grey-darker": "#606f7b",
-	"grey-dark": "#8795a1",
-	grey: "#b8c2cc",
-	"grey-light": "#dae1e7",
-	"grey-lighter": "#f1f5f8",
-	"grey-lightest": "#f8fafc"
+	...generateColorShades("grey", "#b8c2cc")
 };
 
 let sansFonts = ["DM Sans", "Helvetica Neue", "sans-serif"];
@@ -337,11 +331,11 @@ function generateColorShades(colorName, baseColor) {
 	return {
 		[`${colorName}-lightest`]: colorScaleToWhite(0.9).hex(),
 		[`${colorName}-lighter`]: colorScaleToWhite(0.7).hex(),
-		[`${colorName}-light`]: colorScaleToWhite(0.5).hex(),
+		[`${colorName}-light`]: colorScaleToWhite(0.3).hex(),
 		[`${colorName}`]: baseColor,
 		[`${colorName}-dark`]: colorScaleToBlack(0.3).hex(),
 		[`${colorName}-darker`]: colorScaleToBlack(0.6).hex(),
-		[`${colorName}-darkest`]: colorScaleToBlack(0.9).hex()
+		[`${colorName}-darkest`]: colorScaleToBlack(0.85).hex()
 	};
 }
 
