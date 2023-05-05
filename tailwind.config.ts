@@ -8,9 +8,17 @@ const colors = {
 	transparent: "transparent",
 	inherit: "inherit",
 
-	// use any of these to generate a good combination of colors
-	// https://huemint.com/website-1/
-	// http://colormind.io/bootstrap/
+	/**
+	 *    INITIAL TODO -    Control the colors
+	 *
+	 *  use any of these to generate a good combination of colors
+	 *  https://huemint.com/website-1/
+	 *  http://colormind.io/bootstrap/
+	 *
+	 *  Changing here is the easiest. If you need to fine tune specific component colors you may need to modify:
+	 *  - src/styles/colors.scss
+	 *  - specific components styles at their own files
+	 */
 	...generateColorShades("primary", "#0077ff"),
 	...generateColorShades("secondary", "#fac900"),
 	...generateColorShades("emphasis", "#c24943"),
@@ -45,9 +53,23 @@ const colors = {
 	...generateColorShades("grey", "#b8c2cc")
 };
 
-let sansFonts = ["DM Sans", "Helvetica Neue", "sans-serif"];
-let serifFonts = ["Liberation Serif", "Georgia", "serif"];
-let monoFonts = ["Liberation Mono", "Courier New", "monospace", "monospace"];
+/**
+ * TODO -    Control the fonts
+ *            If you include any google fonts, you need to check
+ */
+
+// array means that is in order of preference (if not available, go to next)
+const sansFonts = ["DM Sans", "Helvetica Neue", "sans-serif"];
+const serifFonts = ["Liberation Serif", "Georgia", "serif"];
+const monoFonts = ["Liberation Mono", "Courier New", "monospace", "monospace"];
+const fonts = {
+	title: ["Basier Circle", ...sansFonts],
+	body: sansFonts,
+	sans: sansFonts,
+	serif: serifFonts,
+	mono: monoFonts
+};
+
 export default {
 	modules: {},
 	corePlugins: {
@@ -68,14 +90,7 @@ export default {
 				xl: "1200px"
 			},
 
-			fonts: theme => ( {
-				title: [ "Basier Circle", ...sansFonts ],
-				body: sansFonts,
-
-				sans: sansFonts,
-				serif: serifFonts,
-				mono: monoFonts
-			} ),
+			fonts,
 
 			textSizes: {
 				xs: ".75rem", // 12px

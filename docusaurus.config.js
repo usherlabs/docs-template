@@ -7,11 +7,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "My Usher Site", // TODO
-	tagline: "My project will solve this the best way possible.", // TODO
-	favicon: "img/favicon.ico", // TODO don't forget about favicon
+	title: "My Usher Site", // INITIAL TODO
+	tagline: "My project will solve this the best way possible.", // INITIAL TODO
+	favicon: "img/favicon.ico", // INITIAL TODO don't forget to change your favicon for this project, if needed
 
-	url: "https://docs.some-project.usher.so", // TODO
+	url: "https://docs.some-project.usher.so", // INITIAL TODO
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: "/",
@@ -19,7 +19,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: "usher",
-	projectName: "reponame", // TODO Usually your repo name.
+	projectName: "reponame", // INITIAL TODO Usually your repo name.
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -44,7 +44,7 @@ const config = {
 				// Please change this to your repo.
 				// Remove this to remove the "edit this page" links.
 				editUrl:
-					"https://github.com/usherlabs/some-usher-project/tree/main/packages/create-docusaurus/templates/shared/" // TODO
+					"https://github.com/usherlabs/some-usher-project/tree/main/packages/create-docusaurus/templates/shared/" // INITIAL TODO
 			}
 		],
 		// This plugin enables tailwind
@@ -60,7 +60,7 @@ const config = {
 			};
 		}
 	],
-	// algolia: { // TODO to activate algolia search
+	// algolia: { // INITIAL TODO to activate algolia search. Fill according to your needs
 	//     appId: '',
 	//     apiKey: '',
 	//     indexName: '',
@@ -79,20 +79,20 @@ const config = {
 				]
 			}
 		]
-		// path.resolve(__dirname, './node_modules/@docusaurus/theme-search-algolia'), // TODO if needed to activate algolia
+		// path.resolve(__dirname, './node_modules/@docusaurus/theme-search-algolia'), // INITIAL TODO if needed to activate algolia
 	],
 
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
-			// TODO: Replace with your project's social card
+			// INITIAL TODO: Replace with your project's social card
 			image: "img/docusaurus-social-card.jpg",
 			navbar: {
 				hideOnScroll: true,
 				logo: {
-					alt: "Site Logo", // no need to change
-					src: "logos/UsherLearnLogomark.svg", // TODO
-					srcDark: "logos/UsherLearnLogomark_drk.svg", // TODO
+					alt: "Site Logo", // no need to change, it's the default for accessibility reasons
+					src: "logos/UsherLearnLogomark.svg", // INITIAL TODO
+					srcDark: "logos/UsherLearnLogomark_drk.svg", // INITIAL TODO
 					target: "_self",
 					href: "/"
 				},
@@ -103,10 +103,14 @@ const config = {
 						position: "left",
 						label: "Docs"
 					},
-					{ type: "docSidebar", sidebarId: 'dev-guide', label: "Dev Guide", position: "left" },
+					{
+						type: "docSidebar",
+						sidebarId: "dev-guide",
+						label: "Dev Guide",
+						position: "left"
+					},
 
-					// Right side from here
-
+					// Right side starts here
 					{
 						type: "search",
 						position: "right"
@@ -117,12 +121,12 @@ const config = {
 						items: [
 							{
 								href: "https://usher.so",
-								label: "Usher",
+								label: "Our Homepage",
 								target: "_blank",
 								rel: null
 							},
 							{
-								href: "https://blog.usher.so/",
+								href: "https://usher.so/blog",
 								label: "Blog",
 								target: "_blank",
 								rel: null
@@ -130,7 +134,7 @@ const config = {
 						]
 					},
 					{
-						// TODO may change if you would want different action from user
+						// INITIAL TODO may change if you would want different action from user
 						type: "custom-cta",
 						position: "right",
 						label: "Register your interest",
@@ -156,7 +160,7 @@ const config = {
 						icon: {
 							alt: "github logo",
 							src: `/logos/github.svg`,
-							href: "https://github.com/usherlabs/[thisProject]", //TODO
+							href: "https://github.com/usherlabs/[thisProject]", // INITIAL TODO
 							target: "_blank"
 						}
 					},
