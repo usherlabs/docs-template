@@ -19,7 +19,6 @@ import styles from './styles.module.css';
  */
 function useDocTOC() {
   const {frontMatter, toc} = useDoc();
-  console.log('window size', window.innerWidth);
 
   const windowSize = useWindowSize();
 
