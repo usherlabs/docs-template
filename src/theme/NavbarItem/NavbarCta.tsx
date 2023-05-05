@@ -6,7 +6,7 @@ export default function NavbarCta({ label, href, mobile, ...props }) {
     return (
     <a {...props} mobile={mobile?.toString()} href={useBaseUrl(href)} className={clsx(props.className, 'cta')}>
       {label}
-      <svg xmlns="http://www.w3.org/2000/svg" className="ionicon" viewBox="0 0 512 512" width="12" height="12">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12">
         <title>Arrow Forward</title>
         <path
           fill="none"

@@ -80,8 +80,9 @@ html[data-theme="dark"] {
 
 				&:hover,
 				&:active {
-					opacity: 0.8;
+					@apply text-emphasis border-emphasis;
 				}
+				@apply transition-colors;
 
 				svg {
 					margin-inline-start: 0.125rem;
