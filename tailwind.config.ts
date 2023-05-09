@@ -75,7 +75,7 @@ export default {
 	corePlugins: {
 		preflight: false
 	},
-	content: ["./src/**/*.{js,jsx,ts,tsx}", "../docs/**/*.mdx"], // my markdown stuff is in ../docs, not /src
+	content: ["./src/**/*.{js,jsx,ts,tsx}", "./docs/**/*.{md,mdx}"], // my markdown stuff is in ../docs, not /src
 	darkMode: ["class", '[data-theme="dark"]'], // hooks into docusaurus' dark mode settigns
 
 	plugins: [],
@@ -339,20 +339,28 @@ export default {
 function generateColorShades(colorName, baseColor) {
 	const color = chroma(baseColor);
 
-	// Create a color scale based on the base color
-	const colorScaleToBlack = chroma.scale([baseColor, "#000"]).mode("lab");
-	const colorScaleToWhite = chroma.scale([baseColor, "#fff"]).mode("lab");
+	const bezierSteps = 6;
+
+	const colorScaleToBlack = chroma
+		.bezier([baseColor, "#000"])
+		.scale()
+		.correctLightness()
+		.mode("lab")
+	const colorScaleToWhite = chroma
+		.bezier([baseColor, "#fff"])
+		.scale()
+		.correctLightness()
+		.mode("lab")
 
 	return {
 		[`${colorName}-lightest`]: colorScaleToWhite(0.9).hex(),
-		[`${colorName}-lighter`]: colorScaleToWhite(0.7).hex(),
+		[`${colorName}-lighter`]: colorScaleToWhite(0.5).hex(),
 		[`${colorName}-light`]: colorScaleToWhite(0.3).hex(),
 		[`${colorName}`]: baseColor,
 		[`${colorName}-dark`]: colorScaleToBlack(0.3).hex(),
-		[`${colorName}-darker`]: colorScaleToBlack(0.6).hex(),
-		[`${colorName}-darkest`]: colorScaleToBlack(0.85).hex()
-	};
-}
+		[`${colorName}-darker`]: colorScaleToBlack(0.5).hex(),
+		[`${colorName}-darkest`]: colorScaleToBlack(0.8).hex(),
+	};}
 
 function withOpacity(color, opacity) {
 	return `rgba(${color}, ${opacity})`;

@@ -32,6 +32,7 @@ html[data-theme='dark'] {
 
   //differentiate between inline code and code blocks
   code {
+    width: 1px; // hack that makes it not overflow the page
     font-size: 95%;
   }
   pre code {
@@ -89,7 +90,7 @@ html[data-theme='dark'] {
     margin-block-start: 1rem;
   }
 
-  //intro paragraphs
+  //guide paragraphs
   > header + p {
     color: var(--markdown-text-intro-c);
     font-size: 1.25rem;

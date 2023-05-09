@@ -1,10 +1,10 @@
 html[data-theme='light'] {
-  --toc-separator-c: theme('colors.black-5');
+  --toc-separator-c: theme('colors.black-6');
   --ifm-toc-link-color: theme('colors.black-2');
 }
 
 html[data-theme='dark'] {
-  --toc-separator-c: theme('colors.white-5');
+  --toc-separator-c: theme('colors.white-6');
   --ifm-toc-link-color: theme('colors.white-2');
 }
 
@@ -46,7 +46,7 @@ html[data-theme='dark'] {
       line-height: 12px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: theme('colors.gray.500');
+      @apply text-black-4 dark:text-white-4
     }
 
     .table-of-contents {
