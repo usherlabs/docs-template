@@ -23,7 +23,7 @@ const ComponentTypes: ComponentTypesObject = {
   docSidebar: DocSidebarNavbarItem,
   docsVersion: DocsVersionNavbarItem,
   docsVersionDropdown: DocsVersionDropdownNavbarItem,
-  // CUSTOM CODE - adding custom components
+  // CUSTOM CODE - adding custom ecosystem
   ['custom-iconLink']: NavbarIconLink,
   ['custom-separator']: NavbarSeparator,
   ['custom-cta']: NavbarCta,
