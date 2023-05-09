@@ -31,4 +31,4 @@ We offer a pretty good default customized layout. However, you can always change
 ### Custom Components
 We've created a few custom components that you can use in your templates. These components are designed to enhance the look and feel of your documentation, making it easier to communicate complex ideas and concepts.
 
-Refer to our [Custom Components](./advanced-customization/custom-components.md) documentation for more details on how to use these components in your templates.
+Refer to our [MDX Components](./advanced-customization/custom-components.mdx) documentation for more details on how to use these components in your templates.
