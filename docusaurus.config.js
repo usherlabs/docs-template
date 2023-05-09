@@ -99,15 +99,15 @@ const config = {
 				items: [
 					{
 						type: "docSidebar",
-						sidebarId: "intro",
-						position: "left",
-						label: "Docs"
+						sidebarId: "our-template",
+						label: "Our Template",
+						position: "left"
 					},
 					{
 						type: "docSidebar",
-						sidebarId: "dev-guide",
-						label: "Dev Guide",
-						position: "left"
+						sidebarId: "docusaurus-specific",
+						position: "left",
+						label: "Docusaurus specific"
 					},
 
 					// Right side starts here
@@ -138,7 +138,8 @@ const config = {
 						type: "custom-cta",
 						position: "right",
 						label: "Register your interest",
-						href: "https://pages.usher.so/register-interest"
+						target: "_blank",
+						href: "https://www.usher.so/brands/register-interest/"
 					},
 					{
 						type: "custom-separator",
