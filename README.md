@@ -36,6 +36,9 @@ Example:
 }
 ```
 
+## Guide on how to customize this template
+For further instructions on how to customize this template, we've provided a guide inbuilt in this repository. You'll be able to see it by running it and navigating to http://localhost:3000 or the URL you chose to deploy it.
+
 # Contributing to the Template
 
 We encourage you to contribute by:
