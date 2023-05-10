@@ -15,12 +15,13 @@ const config = {
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: "/doc-template/",
+	trailingSlash: false,
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: "usherlabs",
 	projectName: "docs-template", // INITIAL TODO Usually your repo name.
-	deploymentBranch: "gh-pages",
+	deploymentBranch: "main",
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
