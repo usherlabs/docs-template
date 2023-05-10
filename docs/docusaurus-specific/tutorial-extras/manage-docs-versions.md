@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Manage Docs Versions
 
+:::danger
+This is not defined by default at our Usher template. If having difficulties with this, please open an issue at the template's repository
+:::
+
 Docusaurus can manage multiple versions of your docs.
 
 ## Create a docs version
@@ -45,7 +49,7 @@ module.exports = {
 
 The docs version dropdown appears in your navbar:
 
-![Docs Version Dropdown](img/docsVersionDropdown.png)
+![Docs Version Dropdown](./img/docsVersionDropdown.png)
 
 ## Update an existing version
 

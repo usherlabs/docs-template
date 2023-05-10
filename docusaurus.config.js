@@ -7,8 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "My Usher Site", // INITIAL TODO
-	tagline: "My project will solve this the best way possible.", // INITIAL TODO
+	title: "Usher Docs Template", // INITIAL TODO
+	tagline: "This is the template to be used by Usher Documentations", // INITIAL TODO
 	favicon: "img/favicon.ico", // INITIAL TODO don't forget to change your favicon for this project, if needed
 
 	url: "https://docs.some-project.usher.so", // INITIAL TODO
@@ -19,7 +19,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: "usher",
-	projectName: "reponame", // INITIAL TODO Usually your repo name.
+	projectName: "docs-template", // INITIAL TODO Usually your repo name.
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -44,7 +44,8 @@ const config = {
 				// Please change this to your repo.
 				// Remove this to remove the "edit this page" links.
 				editUrl:
-					"https://github.com/usherlabs/some-usher-project/tree/main/packages/create-docusaurus/templates/shared/" // INITIAL TODO
+					// INITIAL TODO change this to your repo. This is where a user will be redirected to if they follow the link on "edit this page"
+					"https://github.com/usherlabs/docs-template/tree/main/"
 			}
 		],
 		// This plugin enables tailwind
@@ -99,15 +100,15 @@ const config = {
 				items: [
 					{
 						type: "docSidebar",
-						sidebarId: "intro",
-						position: "left",
-						label: "Docs"
+						sidebarId: "our-template",
+						label: "Our Template",
+						position: "left"
 					},
 					{
 						type: "docSidebar",
-						sidebarId: "dev-guide",
-						label: "Dev Guide",
-						position: "left"
+						sidebarId: "docusaurus-specific",
+						position: "left",
+						label: "Docusaurus specific"
 					},
 
 					// Right side starts here
@@ -138,7 +139,8 @@ const config = {
 						type: "custom-cta",
 						position: "right",
 						label: "Register your interest",
-						href: "https://pages.usher.so/register-interest"
+						target: "_blank",
+						href: "https://www.usher.so/brands/register-interest/"
 					},
 					{
 						type: "custom-separator",
@@ -160,7 +162,7 @@ const config = {
 						icon: {
 							alt: "github logo",
 							src: `/logos/github.svg`,
-							href: "https://github.com/usherlabs/[thisProject]", // INITIAL TODO
+							href: "https://github.com/usherlabs/docs-template", // INITIAL TODO
 							target: "_blank"
 						}
 					},

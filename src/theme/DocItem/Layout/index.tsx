@@ -60,7 +60,7 @@ export default function DocItemLayout({children}: Props): JSX.Element {
       </div>
       {/* CUSTOM CODE*/}
       {/*{docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}*/}
-      {docTOC.desktop && !docTOC.hidden && <div className="col col--3">{docTOC.desktop}</div>}
+      {docTOC.desktop && !docTOC.hidden && <div className="end">{docTOC.desktop}</div>}
     {/* -------- */}
     </div>
   );
