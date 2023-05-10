@@ -11,15 +11,17 @@ const config = {
 	tagline: "This is the template to be used by Usher Documentations", // INITIAL TODO
 	favicon: "img/favicon.ico", // INITIAL TODO don't forget to change your favicon for this project, if needed
 
-	url: "https://docs.some-project.usher.so", // INITIAL TODO
+	url: "https://usherlabs.github.io", // INITIAL TODO
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/",
+	baseUrl: "/doc-template/",
+	trailingSlash: false,
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "usher",
+	organizationName: "usherlabs",
 	projectName: "docs-template", // INITIAL TODO Usually your repo name.
+	deploymentBranch: "main",
 
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
@@ -45,7 +47,7 @@ const config = {
 				// Remove this to remove the "edit this page" links.
 				editUrl:
 					// INITIAL TODO change this to your repo. This is where a user will be redirected to if they follow the link on "edit this page"
-					"https://github.com/usherlabs/docs-template/tree/main/"
+					"https://github.com/usherlabs/docs-template/tree/develop/"
 			}
 		],
 		// This plugin enables tailwind
