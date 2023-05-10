@@ -43,7 +43,7 @@ You don't need to deal with different shades, as this is handled automatically.
 | borders of | this  | table |
 
 - Side bar details
-- Links as [this one](https://so-much-pain.glitch.me/do-a-barrel-roll.html)
+- Links as [this one](https://usher.so/)
 -
 
 ### Secondary
