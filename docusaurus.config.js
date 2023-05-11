@@ -14,7 +14,7 @@ const config = {
 	url: "https://usherlabs.github.io", // INITIAL TODO
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/doc-template/",
+	baseUrl: "/docs-template/",
 	trailingSlash: false,
 
 	// GitHub pages deployment config.
